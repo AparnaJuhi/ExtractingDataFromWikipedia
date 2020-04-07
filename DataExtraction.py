@@ -3,13 +3,13 @@ import wikipedia
 
 #Topic of their interest: ex- politics, art, literature, music etc
 print("Choose the  topic of your interest: ")
-list_of_topic=['Politics', 'Art', 'Science', 'Music', 'Literature']
+list_of_topic=['Politics', 'Art', 'Science', 'Music', 'Literature','Tourism']
 for i in range(len(list_of_topic)):
     print(i+1,". ",list_of_topic[i])
 
 choice=int(input())
 choice-=1
-
+list_of_tourism=["red fort", "taj mahal"]
 list_of_Politics=["narendra modi", "rahul gandhi"]
 list_of_Art=["madhubani painting", "kathak"]
 list_of_Science=["mangalyan", "chandrayan"]
@@ -27,6 +27,8 @@ elif(choice==3):
     chosen=list_of_Music
 elif(choice==4):
     chosen=list_of_Literature
+elif(choice==5):
+    chosen=list_of_tourism
 else:
     print("Invalid Choice")
     
